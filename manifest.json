@@ -1,0 +1,27 @@
+{
+  "name": "fabric copy",
+  "version": "1.0",
+  "description": "The extension for copy data.",
+  "browser_action": {
+    "default_icon": "images/get_started16.png",
+    "default_title": "Copy Data",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    
+    }
+  ],
+  "manifest_version": 2
+}
